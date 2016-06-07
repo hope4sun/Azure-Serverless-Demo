@@ -1,1 +1,24 @@
-
+{
+  "bindings": [
+    {
+      "authLevel": "anonymous",
+      "name": "req",
+      "type": "httpTrigger",
+      "direction": "in"
+    },
+    {
+      "name": "res",
+      "type": "http",
+      "direction": "out"
+    },
+    {
+      "type": "table",
+      "name": "tableBinding",
+      "tableName": "Relics",
+      "take": "250",
+      "connection": "serverless_STORAGE",
+      "direction": "in"
+    }
+  ],
+  "disabled": false
+}
