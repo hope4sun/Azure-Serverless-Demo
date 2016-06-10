@@ -6,7 +6,7 @@ using Microsoft.WindowsAzure.Storage.Table;
 
 public static async Task<HttpResponseMessage> Run(HttpRequestMessage req, IQueryable<Item> tableBinding, TraceWriter log)
 {
-    var query = from p in tableBinding select new Relic {id = p.RowKey, name = p.Name, epitaph = p.Epitaph };
+    var query = from entity in tableBinding where entity.PartitionKey == "Relics" select new Relic {id = entity.RowKey, name = entity.Name, epitaph = entity.Epitaph };
 
     return await Task<HttpResponseMessage>.Factory.StartNew(() =>
     {
