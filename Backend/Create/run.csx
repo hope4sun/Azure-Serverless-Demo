@@ -31,5 +31,5 @@ public class Relic
     public string PartitionKey { get; set; }
     public string RowKey { get; set; }
     public string Name { get; set; }
-	public string Epitaph { get; set; }
+    public string Epitaph { get; set; }
 }
