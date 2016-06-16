@@ -9,7 +9,7 @@ public static void Run(HttpRequestMessage req, ICollector<Relic> tableBinding, T
         .FirstOrDefault(q => string.Compare(q.Key, "name", true) == 0)
         .Value;
 		
-	string epitaph = req.GetQueryNameValuePairs()
+    string epitaph = req.GetQueryNameValuePairs()
         .FirstOrDefault(q => string.Compare(q.Key, "epitaph", true) == 0)
         .Value;
 
