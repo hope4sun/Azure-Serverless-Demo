@@ -8,4 +8,6 @@ This repository contains the basic CRUD operations written in C# for Azure Funct
 
 Url to test the site is : <a herf="http://www.noservers.co.uk/root/index.html">http://www.noservers.co.uk/root/index.html</a>
 
+#### Note: I through this together in half a day or so, so none of the code is prodcution ready, certainly welcome any refactoring and feedback :)
+
 
