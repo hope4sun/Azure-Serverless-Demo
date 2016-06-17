@@ -1,0 +1,26 @@
+<div>
+  <form novalidate="novalidate" class="form-horizontal">
+
+    <div class="form-group">
+
+      <label class="control-label" for="inputFirstName">Server Name</label>
+ 
+        <input type="text" class="form-control" ng-model="relic.name" id="inputFirstName" placeholder="Server Name">
+
+    </div>
+
+    <div class="form-group">
+
+        <label class="control-label" for="inputLastName">Epitaph</label>
+
+        <input type="text" class="form-control" ng-model="relic.epitaph" id="inputLastName" placeholder="Epitaph">
+    </div>
+
+   <div class="controls">
+        <a ng-click="createNewRelic()" class="btn btn-small btn-primary">Save</a>
+        <a ng-click="cancel()" class="btn btn-small">Cancel</a>
+      </div>
+
+</form>
+</div>
+
